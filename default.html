@@ -1,0 +1,44 @@
+		
+			
+				<!-- Heading Row -->
+				<div class="row">
+					<div class="col-md-6">
+						<carousel interval="myInterval">
+						  <slide ng-repeat="slide in slides" active="slide.active">
+							<img ng-src="{{slide.image}}" style="margin:auto;">
+							<div class="carousel-caption">
+							  <h4>Slide {{$index}}</h4>
+							  <p>{{slide.text}}</p>
+							</div>
+						  </slide>
+						</carousel>
+					<!-- /.col-md-4 -->
+					</div>
+					<div class="col-md-6">
+						<h1>Business Name or Tagline</h1>
+						<p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+						<a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+					</div>
+				</div>
+				<!-- /.row -->
+				<hr/>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="well text-center">
+							This is a well that is a great spot for a business tagline or phone number for easy access!
+						</div>
+					</div>
+					<!-- /.col-lg-12 -->
+				</div>		
+				<div class="col-md-3 col-sm-6 hero-feature" ng-repeat= "data in content">
+					<div class="thumbnail">
+						<img src="{{ data.Image }}" alt="" style="height:150px;width:100%;"></img>
+						<div class="caption">
+							<h3>{{ data.Name }}</h3>
+							<p>{{ data.Ket }}</p>
+							<p>
+								<a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+							</p>
+						</div>
+					</div>
+				</div>
